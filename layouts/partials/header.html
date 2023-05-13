@@ -1,32 +1,26 @@
 <header class="site-header">
-    <div class="wrapper">
-        <div class="site-title-wrapper">
-            <a class="site-title" href="/">
-                <div class="outer-button">
-                    <div class="inner-button">
-                        {{.Site.Title}}
-                    </div>
-                </div>
-            </a>
+    <a class="site-title" href="/">
+        <div class="outer-button">
+            <div class="inner-button">
+                {{.Site.Title}}
+            </div>
         </div>
-        <nav class="site-nav">
-            {{ range .Site.Menus.main }}
-            {{ if .Page.Params.redirect }}
-            <a class="page-link" href="{{ .Page.Params.redirect }}">
-                <div class="outer-button">
-                    <div class="inner-button">{{ .Name }}</div>
-                </div>
-            </a>
-            {{ else }}
-            <a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
-                <div class="outer-button">
-                    <div class="inner-button">{{ .Name }}</div>
-                </div>
-            </a>
-            {{ end }}
-            {{ end }}
-        </nav>
-
-    </div>
-
+    </a>
+    <nav class="site-nav">
+        {{ range .Site.Menus.main }}
+        {{ if .Page.Params.redirect }}
+        <a class="page-link" href="{{ .Page.Params.redirect }}">
+            <div class="outer-button">
+                <div class="inner-button">{{ .Name }}</div>
+            </div>
+        </a>
+        {{ else }}
+        <a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
+            <div class="outer-button">
+                <div class="inner-button">{{ .Name }}</div>
+            </div>
+        </a>
+        {{ end }}
+        {{ end }}
+    </nav>
 </header>
