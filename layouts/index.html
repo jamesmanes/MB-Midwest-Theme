@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="home">
+<div class="main">
     <ul class="entries">
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params
         "archive-paginate" | default 25) }}

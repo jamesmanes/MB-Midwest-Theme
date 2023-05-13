@@ -20,6 +20,8 @@ h4, h5, h6 {
 .site-header {
 	display: flex;
 	justify-content: space-between;
+	margin: auto;
+	width: 50rem;
 }
 	a.site-title {
 		text-decoration: none;
@@ -30,4 +32,24 @@ h4, h5, h6 {
   		display: flex;
   		column-gap: 1rem;
 		align-items: center;
+	}
+
+/* Main (Blog Posts) */
+.main {
+	display: flex;
+	margin: auto;
+	width: 50rem;
+}
+	.main ul.entries {
+		display: flex;
+		flex-direction: column;
+		padding-inline-start: 0;
+  		row-gap: 2rem;
+  	}
+	.main li.entry {
+		list-style-type: none;
+	}
+	.main li.entry .entry-content {
+		border-left: 0.25rem solid black;
+		padding-left: 0.5rem;
 	}
