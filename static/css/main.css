@@ -8,6 +8,8 @@ body {
 }
 h1 {
 	font-size: 1.6rem;
+	padding: 0;
+	margin: 0;
 }
 h2 {
 	font-size: 1.4rem;
@@ -64,27 +66,40 @@ h4, h5, h6 {
 	.main li.entry {
 		list-style-type: none;
 	}
-	.main li.entry>h1>a {
+	.main li.entry>h1.entry-title {
+		margin-bottom: 1rem;
+	}
+	.main li.entry>h1.entry-title>a {
 		background-color: #1f1f1f;
 		color: #f1f1f1;
-		padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+		padding: 0.4rem 0.8rem 0.4rem 0.8rem;
 		text-decoration: none;
 	}
-	.main li.entry>h1>a:hover {
+	.main li.entry>h1.entry-title>a:hover {
 		text-decoration: underline;
 	}
 	.main li.entry>.entry-metadata {
-		display: flex;
 		color: #f1f1f1;
 	}
 		.main li.entry>.entry-metadata>span {
 			background-color: #1f1f1f;
-			padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+			padding: 0.2rem 0.8rem 0.2rem 0.8rem;
 		}
 		.main li.entry>.entry-metadata a {
 			color: #f1f1f1;
+			text-decoration: none;
+		}
+		.main li.entry>.entry-metadata a:hover {
+			text-decoration: underline;
 		}
 	.main li.entry .entry-content {
 		border-left: 0.25rem solid black;
 		padding-left: 0.5rem;
+		margin-top: 1rem;
+	}
+	.main li.entry .entry-content>p {
+		margin-top: 1rem;
+	}
+	.main li.entry .entry-content img {
+		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
 	}
