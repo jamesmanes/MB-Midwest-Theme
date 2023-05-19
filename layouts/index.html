@@ -1,5 +1,8 @@
 {{ define "main" }}
 <div class="main">
+	<div class="page-title">
+		<h1>🗞️ Latest</h1>
+	</div>
     <ul class="entries">
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params
         "archive-paginate" | default 25) }}
@@ -10,7 +13,7 @@
             {{ end }}
             <div class="entry-metadata">
             	<span>
-					✎ <a href="{{ .Permalink }}" class="u-url">
+					<a href="{{ .Permalink }}" class="u-url">
 						<time class="dt-published"
                             datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"
                             }}
