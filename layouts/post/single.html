@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="main">
+    <ul class="entries">
+		<li class="entry">
+		{{ if .Title }}
+        	<h1 class="entry-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+         {{ end }}
+         <div class="entry-content">
+            {{ .Content }}
+         </div>
+		</li>
+	</ul>
+</div>
+{{ end }}
