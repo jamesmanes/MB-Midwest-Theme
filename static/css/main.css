@@ -147,6 +147,28 @@ h4, h5, h6 {
 		max-width: calc(100% - 2rem); 
 		height: auto;
 	}
+	.main+.photogrid {
+		/* Special case. Undo padding of main for photo grid. */
+		margin-top: -4rem;
+	}
+.photogrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: auto 4rem auto 4rem;
+}
+	.photogrid img {
+		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+		border: 0.6rem solid white;
+		margin: 1rem;
+		max-width: 16rem;
+	}
+	.photogrid a:nth-child(odd) img {
+		transform: rotate(1deg);
+	}
+	.photogrid a:nth-child(even) img {
+		transform: rotate(-1deg);
+	}
 
 /* For smaller displays. */
 @media (max-width: 44rem) {
