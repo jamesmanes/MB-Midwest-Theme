@@ -300,6 +300,9 @@ footer {
 	footer>.footer-wrapper>.blog-description {
 		background-color: #efefef
 	}
+	footer>.footer-wrapper>.blog-description {
+		color: #2f2f2f;
+	}
 	footer>.footer-wrapper>.blog-description>a {
 		color: #2f2f2f;
 	}
