@@ -1,6 +1,11 @@
-<footer class="site-footer">
-    <div class="site-footer-content">
-       <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
-          <p class="follow">{{ .Site.Params.description | safeHTML }}</p>
+<footer>
+    <div class="footer-wrapper">
+        <div class="blog-description">{{ .Site.Params.description | safeHTML }}</div>
+        <div class="footer-links">
+            <div>
+                <span>Subscribe via</span>
+                <a href="{{ "feed.xml" | absURL }}">RSS</a>
+            </div>
+        </div>
     </div>
 </footer>
