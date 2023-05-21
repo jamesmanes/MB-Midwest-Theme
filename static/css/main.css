@@ -102,6 +102,7 @@ h4, h5, h6 {
 	}
 	.main li.entry>h1.entry-title {
 		margin-bottom: 1rem;
+        display: flex;
 	}
 	.main li.entry>h1.entry-title>a {
         display: block;
