@@ -30,6 +30,12 @@ h4, h5, h6 {
 .photos-grid-container {
     margin-top: 1rem;
 }
+.mb-logo {
+    width: 2rem;
+    position: absolute;
+    margin-left: -1.5rem;
+    margin-top: -1rem;
+}
 
 /* Header Content */
 .site-header {
@@ -42,15 +48,13 @@ h4, h5, h6 {
 }
 	.site-header>.site-title {
   		display: flex;
-		background: #2f2f2f;
 		font-weight: bold;
 		color: #efefef;
-		padding: 0.8rem;
 		font-size: 2rem;
 	}
 		.site-header>.site-title>a {
-			text-decoration: none;
-			color: #efefef;
+			color: #2f2f2f;
+            margin-left: 0.8rem;
 		}
         .site-header>.site-title>a:hover {
 			text-decoration: underline;
@@ -266,11 +270,10 @@ footer {
 		background: rgba(10, 10, 15, 0.7);
 	}
 	.site-header>.site-title {
-		background: #efefef;
-		color: #2f2f2f;
+		color: #efefef;
 	}
 		.site-header>.site-title>a {
-			color: #2f2f2f;
+			color: #efefef;
 		}
 	.site-header>nav {
 		border-color: #efefef;
