@@ -77,7 +77,7 @@
 	"languageCode": "[LANGUAGE]",
 	"paginate": 25,
 	"params": {
-		"description": "Follow <a href=\"https://micro.blog/[USERNAME]\">@[USERNAME] on Micro.blog</a>.",
+		"description": "<a href=\"https://micro.blog/[USERNAME]\">@[USERNAME]@micro.blog</a>",
 		"itunes_description": "[ITUNES_DESCRIPTION]",
 		"itunes_category": "[ITUNES_CATEGORY]",
 		"itunes_subcategory": "[ITUNES_SUBCATEGORY]",
