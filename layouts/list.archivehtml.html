@@ -6,9 +6,14 @@
 		{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 		{{ if gt (len $list) 0 }}
 			<ul class="categories">
-					{{ range $list }}
-						<li class="block-link"><a href="{{ .Permalink }}">⌘{{ .Title }}</a></li>
-					{{ end }}
+    			{{ range $list }}
+					<li class="block-link">
+						<span>📁</span>
+						<a href="{{ .Permalink }}">
+							{{ .Title }}
+						</a>
+					</li>
+				{{ end }}
 			</ul>
 		{{ end }}
 		<ul class="entries">
