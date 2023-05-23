@@ -94,6 +94,21 @@ h4, h5, h6 {
     .main>.photos-page-title {
 		align-self: center;
 	}
+	.main ul.categories {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding-inline-start: 0;
+		border-left: 0.25rem solid #2f2f2f;
+		padding-left: 0.5rem;
+		margin: 0 0 2.4rem 0;
+	}
+		.main ul.categories>li {
+			list-style-type: none;
+		}
+		.main ul.categories>li>a {
+			color: #2f2f2f;
+		}
 	.main ul.entries {
 		display: flex;
 		flex-direction: column;
@@ -280,6 +295,12 @@ footer {
 		border-color: #efefef;
 	}
 		.site-header>nav a {
+			color: #efefef;
+		}
+	.main ul.categories {
+		border-color: #efefef;
+	}
+		.main ul.categories>li>a {
 			color: #efefef;
 		}
 	.main li.entry>.entry-metadata {
