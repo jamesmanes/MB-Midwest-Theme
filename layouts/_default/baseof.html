@@ -2,9 +2,13 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-    {{ partial "header.html" . }}
-    {{ block "main" . }}{{ end }}
-    {{ partial "footer.html" . }}
-    {{ partial "custom_footer.html" . }}
+	<div id="bg">
+		<div id="bg-overlay">
+    		{{ partial "header.html" . }}
+    		{{ block "main" . }}{{ end }}
+   			{{ partial "footer.html" . }}
+    		{{ partial "custom_footer.html" . }}
+		</div>
+	</div>
 </body>
 </html>
