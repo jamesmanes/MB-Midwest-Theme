@@ -1,18 +1,39 @@
 /* Fonts */
 @font-face {
-  	font-family: "Arvo";
+	font-family: 'Arvo';
 	font-weight: normal;
-  	src: url('../fonts/Arvo/Arvo-Regular.ttf');
+	src: url('../fonts/Arvo/Arvo-Regular.ttf') format('truetype');
 }
 @font-face {
-  	font-family: "ArvoBold";
+	font-family: 'Arvo';
+	font-style: bold;
+	src: url('../fonts/Arvo/Arvo-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Arvo';
+	font-style: italic;
+	src: url('../fonts/Arvo/Arvo-Italic.ttf') format('truetype');
+}
+@font-face {
+  	font-family: "Poppins";
+	font-weight: normal;
+  	src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  	font-family: "Poppins";
 	font-weight: bold;
-  	src: url('../fonts/Arvo/Arvo-Bold.ttf');
+  	src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  	font-family: "Poppins";
+	font-style: italic;
+  	src: url('../fonts/Poppins/Poppins-Italic.ttf');
 }
 
 /* Global */
 html {
-	background-color: #efefef;
+	font-family: "Poppins";
+	background-color: white;
 	color: #2f2f2f;
 	height: 100%;
 }
@@ -37,12 +58,18 @@ h4, h5, h6 {
 	font-size: 1rem;
 }
 #bg {
-	background: url('../img/cloud-bg-1.jpg');
+	background: url('../img/cloud-bg-2.jpg');
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 #bg-overlay {
-	-webkit-backdrop-filter: saturate(0%) brightness(50%);
-	backdrop-filter: saturate(0%) brightness(50%);
-	background: linear-gradient(to bottom, rgba(8, 32, 64, 0.5), rgba(0, 16, 32, 0.8));
+	-webkit-backdrop-filter: saturate(0%) brightness(150%) blur(0.2rem);
+	backdrop-filter: saturate(0%) brightness(150%) blur(0.2rem);
+	background: linear-gradient(to bottom, rgba(220, 230, 255, 0.7), rgba(200, 200, 255, 0.9));
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 }
 .photos-grid-container {
     margin-top: 1rem;
@@ -69,10 +96,13 @@ h4, h5, h6 {
 }
 	.site-header>.site-title {
   		display: flex;
-		font-family: ArvoBold;
-		font-weight: bold;
+		font-family: Arvo;
 		color: #efefef;
 		font-size: 2rem;
+		transition: transform .2s;
+	}
+	.site-header>.site-title:hover {
+  		transform: scale(1.2) rotate(-2deg);
 	}
 		.site-header>.site-title>a {
 			color: #2f2f2f;
@@ -301,11 +331,19 @@ footer {
 /* Dark mode. */
 @media (prefers-color-scheme: dark) {
 	html {
-		background: url('https://jmanes-test.micro.blog/uploads/2023/411a48dc20.png') black;
+		background: url('../img/cloud-bg-1.jpg') black;
 		color: #efefef;
 	}
 	body {
 		background: rgba(10, 10, 15, 0.7);
+	}
+	#bg {
+		background: url('../img/cloud-bg-1.jpg');
+	}
+	#bg-overlay {
+		-webkit-backdrop-filter: saturate(0%) brightness(50%);
+		backdrop-filter: saturate(0%) brightness(50%);
+		background: linear-gradient(to bottom, rgba(8, 32, 64, 0.5), rgba(0, 16, 32, 0.8));
 	}
 	.site-header>.site-title {
 		color: #efefef;
