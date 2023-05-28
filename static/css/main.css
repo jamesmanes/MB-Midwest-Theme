@@ -136,9 +136,6 @@ h4, h5, h6 {
 		color: #efefef;
 		padding: 0.4rem 0.8rem 0.4rem 0.8rem;
 		text-decoration: none;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
 	}
 	.main li.entry>h1.entry-title>a:hover {
 		text-decoration: underline;
