@@ -18,11 +18,23 @@
             </div>
         </a>
         {{ else }}
+		{{ $lcName := lower .Name }}
 		<div class="page-link-wrapper">
-  			{{ if in .Name "About" }}<span class="page-link-emoji">📖</span>{{ end }}
-  			{{ if in .Name "Archive" }}<span class="page-link-emoji">🗄️</span>{{ end }}
-  			{{ if in .Name "Photos" }}<span class="page-link-emoji">📸</span>{{ end }}
-  			{{ if in .Name "Replies" }}<span class="page-link-emoji">💬</span>{{ end }}
+  			{{ if in $lcName "about" }}
+			<span class="page-link-emoji">🧭</span>
+			{{ end }}
+  			{{ if in $lcName "archive" }}
+			<span class="page-link-emoji">🗄️</span>
+			{{ end }}
+  			{{ if in $lcName "photos" }}
+			<span class="page-link-emoji">📸</span>
+			{{ end }}
+  			{{ if in $lcName "reading" }}
+			<span class="page-link-emoji">📚</span>
+			{{ end }}
+  			{{ if in $lcName "replies" }}
+			<span class="page-link-emoji">💬</span>
+			{{ end }}
 			<a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
   				{{ .Name }}
           	</a>

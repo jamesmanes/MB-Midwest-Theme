@@ -7,9 +7,8 @@
 		{{ if gt (len $list) 0 }}
 			<ul class="categories">
     			{{ range $list }}
-					<li class="block-link">
-						<span>📁</span>
-						<a href="{{ .Permalink }}">
+					<li>
+						📁<a href="{{ .Permalink }}">
 							{{ .Title }}
 						</a>
 					</li>
