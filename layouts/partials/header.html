@@ -21,19 +21,39 @@
 		{{ $lcName := lower .Name }}
 		<div class="page-link-wrapper">
   			{{ if in $lcName "about" }}
-			<span tabindex="-1" class="page-link-emoji">🧭</span>
+			<span tabindex="-1" class="page-link-emoji">
+				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
+					🧭
+				</a>
+			</span>
 			{{ end }}
   			{{ if in $lcName "archive" }}
-			<span tabindex="-1" class="page-link-emoji">🗄️</span>
+			<span tabindex="-1" class="page-link-emoji">
+				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
+					🗄️
+				</a>
+			</span>
 			{{ end }}
   			{{ if in $lcName "photos" }}
-			<span tabindex="-1" class="page-link-emoji">📸</span>
+			<span tabindex="-1" class="page-link-emoji">
+				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
+					📸
+				</a>
+			</span>
 			{{ end }}
   			{{ if in $lcName "reading" }}
-			<span tabindex="-1" class="page-link-emoji">📚</span>
+			<span tabindex="-1" class="page-link-emoji">
+				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
+					📚
+				</a>
+			</span>
 			{{ end }}
   			{{ if in $lcName "replies" }}
-			<span tabindex="-1" class="page-link-emoji">💬</span>
+			<span tabindex="-1" class="page-link-emoji">
+				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
+					💬
+				</a>
+			</span>
 			{{ end }}
 			<a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
   				{{ .Name }}
