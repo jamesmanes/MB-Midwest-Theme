@@ -1,5 +1,5 @@
 <header class="site-header">
-	<div class="site-title">
+	<div class="site-title" tabindex="0">
 		<svg class="mb-logo" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 			<linearGradient id="mb-gradient" x1="0" x2="0" y1="0" y2="1">
       			<stop offset="0%" stop-color="#ffc300" />
@@ -9,7 +9,7 @@
 		</svg>
     	<a href="/">{{.Site.Title}}</a>
 	</div>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="navigation" aria-description="Navigation links." tabindex="0">
         {{ range .Site.Menus.main }}
         {{ if .Page.Params.redirect }}
         <a class="page-link" href="{{ .Page.Params.redirect }}">
@@ -21,19 +21,19 @@
 		{{ $lcName := lower .Name }}
 		<div class="page-link-wrapper">
   			{{ if in $lcName "about" }}
-			<span class="page-link-emoji">🧭</span>
+			<span tabindex="-1" class="page-link-emoji">🧭</span>
 			{{ end }}
   			{{ if in $lcName "archive" }}
-			<span class="page-link-emoji">🗄️</span>
+			<span tabindex="-1" class="page-link-emoji">🗄️</span>
 			{{ end }}
   			{{ if in $lcName "photos" }}
-			<span class="page-link-emoji">📸</span>
+			<span tabindex="-1" class="page-link-emoji">📸</span>
 			{{ end }}
   			{{ if in $lcName "reading" }}
-			<span class="page-link-emoji">📚</span>
+			<span tabindex="-1" class="page-link-emoji">📚</span>
 			{{ end }}
   			{{ if in $lcName "replies" }}
-			<span class="page-link-emoji">💬</span>
+			<span tabindex="-1" class="page-link-emoji">💬</span>
 			{{ end }}
 			<a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
   				{{ .Name }}
