@@ -329,6 +329,9 @@ footer {
 
 /* For smaller displays. */
 @media (max-width: 46rem) {
+	.credit {
+		width: calc(100% - 2rem);
+	}
 	.site-header {
 		flex-direction: column;
 		align-items: center;
