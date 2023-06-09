@@ -71,6 +71,12 @@ h4, h5, h6 {
 	flex-direction: column;
 	flex-grow: 1;
 }
+#permalink {
+	text-decoration: underline;
+}
+#permalink:hover {
+	cursor: pointer;
+}
 .credit {
 	display: flex;
 	flex-direction: column;
