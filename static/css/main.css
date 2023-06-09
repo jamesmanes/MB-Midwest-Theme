@@ -71,6 +71,18 @@ h4, h5, h6 {
 	flex-direction: column;
 	flex-grow: 1;
 }
+.credit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.7rem;
+	margin: auto auto 1rem auto;
+	width: 40rem;
+	opacity: 50%;
+}
+	.credit a {
+		color: black;
+	}
 .photos-grid-container {
     margin-top: 1rem;
 }
@@ -388,6 +400,9 @@ footer {
 		-webkit-backdrop-filter: saturate(0%) brightness(50%);
 		backdrop-filter: saturate(0%) brightness(50%);
 		background: linear-gradient(to bottom, rgba(8, 32, 64, 0.5), rgba(0, 16, 32, 0.6));
+	}
+	.credit a {
+		color: white;
 	}
 	.site-header>.site-title {
 		color: #efefef;
