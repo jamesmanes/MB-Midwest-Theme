@@ -5,7 +5,7 @@
 	</div>
     <ul class="entries">
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params
-        "archive-paginate" | default 25) }}
+        "archive-paginate" | default 20) }}
         {{ range $paginator.Pages }}
         <li class="entry">
             {{ if .Title }}
