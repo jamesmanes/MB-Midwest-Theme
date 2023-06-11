@@ -125,10 +125,10 @@ h4, h5, h6 {
 /* header content */
 .site-header {
 	display: flex;
+	align-self: center;
 	flex-direction: column;
 	align-items: flex-start;
 	padding-top: 4rem;
-	margin: auto;
 	width: var(--content-width);
 }
 	.site-header>.site-title {
@@ -171,9 +171,9 @@ h4, h5, h6 {
 /* blog posts */
 .main {
 	display: flex;
+	align-self: center;
 	flex-direction: column;
 	flex-grow: 1;
-	margin: auto;
 	padding-top: 4rem;
 	width: var(--content-width);
 }
@@ -263,7 +263,6 @@ h4, h5, h6 {
 		display: flex;
 		column-gap: 1rem;
 		border: none;
-		padding: 1rem;
 	}
 	.main li.entry .entry-content img.book-cover {
 		box-shadow: none;
@@ -321,8 +320,9 @@ h4, h5, h6 {
 /* pagination */
 #post-nav {
 	display: flex;
+	align-self: center;
 	justify-content: flex-end;
-	margin: 2rem auto auto auto;
+	margin-top: 2rem;
 	width: var(--content-width);
 }
 	#post-nav a {
@@ -348,8 +348,8 @@ h4, h5, h6 {
 /* footer */
 footer {
 	display: flex;
+	align-self: center;
 	flex-shrink: 0;
-	margin: auto;
 	padding: 4rem 0 4rem 0;
 	width: var(--content-width);
 }

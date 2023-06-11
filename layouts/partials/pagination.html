@@ -1,17 +1,20 @@
-{{ $pag := $.Paginator }}
-
+{{ $paginator := .Paginator }}
+{{ with $paginator }}
+{{ if gt $paginator.TotalPages 1 }}
 <nav id="post-nav">
-    {{ if $pag.HasPrev }}
+    {{ if $paginator.HasPrev }}
         <span class="prev">
 			<span class="arrow">⬅️</span>
-			<a href="{{ $pag.Prev.URL }}" title="Previous Page">Previous</a>
+			<a href="{{ $paginator.Prev.URL }}" title="Previous Page">Previous</a>
         </span>
     {{ end }}
 	<span class="spacer"></span>
-    {{ if $pag.HasNext }}
+    {{ if $paginator.HasNext }}
         <span class="next">
-            <a href="{{ $pag.Next.URL }}">Next</a>
+            <a href="{{ $paginator.Next.URL }}">Next</a>
 			<span class="arrow">➡️</span>
         </span>
     {{ end }}
 </nav>
+{{ end }}
+{{ end }}
