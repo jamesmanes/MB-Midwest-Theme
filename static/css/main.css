@@ -163,6 +163,12 @@ h4, h5, h6 {
 			.site-header>nav a.page-emoji-link {
 				text-decoration: none;
 			}
+			.site-header nav.site-nav .page-link-wrapper span.page-link-emoji {
+				transition: transform .2s;
+			}
+			.site-header nav.site-nav .page-link-wrapper:hover > span.page-link-emoji  {
+				transform: rotate(-15deg);
+			}
 			.site-header>nav>.page-link-wrapper {
 				display: flex;
 				align-items: flex-end;
