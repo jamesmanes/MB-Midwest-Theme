@@ -258,9 +258,9 @@ h4, h5, h6 {
 		-webkit-backdrop-filter: blur(0.4rem);
 		backdrop-filter: blur(0.4rem);
 		border-left: 0.25rem solid var(--text-color);
-		border-radius: 0 0.4rem 0.4rem 0;
+		border-radius: 0 0.4rem 0.4rem 0.4rem;
 		padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-		text-align: justify;
+		text-align: left;
 		word-wrap: break-word;
 	}
 	.main li.entry .reading-entry-content {
