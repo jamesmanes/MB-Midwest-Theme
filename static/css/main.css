@@ -163,12 +163,6 @@ h4, h5, h6 {
 			.site-header>nav a.page-emoji-link {
 				text-decoration: none;
 			}
-			.site-header nav.site-nav .page-link-wrapper span.page-link-emoji {
-				transition: transform .2s;
-			}
-			.site-header nav.site-nav .page-link-wrapper:hover > span.page-link-emoji  {
-				transform: rotate(-15deg);
-			}
 			.site-header>nav>.page-link-wrapper {
 				display: flex;
 				align-items: flex-end;
@@ -327,29 +321,17 @@ h4, h5, h6 {
 #post-nav {
 	display: flex;
 	align-self: center;
-	justify-content: flex-end;
+	gap: 1rem;
+	justify-content: flex-start;
 	margin-top: 2rem;
 	width: var(--content-width);
 }
 	#post-nav a {
-		color: var(--accent-color);
-		text-decoration: none;
+		color: var(--text-color);
 	}
-	#post-nav a:hover {
-		text-decoration: underline;
-	}
-	#post-nav .next {
-		background-color: var(--text-color);
-		border-radius: 0.4rem;
-		padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-	}
-	#post-nav .prev {
-		background-color: var(--text-color);
-		border-radius: 0.4rem;
-		padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-	}
-	#post-nav .spacer {
-		flex-grow: 1;
+	#post-nav .navlink {
+		display: flex;
+		gap: 0.3rem;
 	}
 /* footer */
 footer {

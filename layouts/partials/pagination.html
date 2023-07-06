@@ -3,14 +3,14 @@
 {{ if gt $paginator.TotalPages 1 }}
 <nav id="post-nav">
     {{ if $paginator.HasPrev }}
-        <span class="prev">
+        <span class="navlink">
 			<span class="arrow">⬅️</span>
 			<a href="{{ $paginator.Prev.URL }}" title="Previous Page">Previous</a>
         </span>
     {{ end }}
-	<span class="spacer"></span>
+	<span class="spacer">|</span>
     {{ if $paginator.HasNext }}
-        <span class="next">
+        <span class="navlink">
             <a href="{{ $paginator.Next.URL }}">Next</a>
 			<span class="arrow">➡️</span>
         </span>
