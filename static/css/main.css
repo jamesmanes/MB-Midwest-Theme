@@ -159,7 +159,7 @@ h4, h5, h6 {
 .replies-separator {
 	margin-bottom: 4rem;
 	margin-top: 4rem;
-	border: 0.1rem dashed var(--text-color);
+	border: 0.25rem dashed var(--text-color);
 	opacity: 0.2;
 }
 .rss-logo {
