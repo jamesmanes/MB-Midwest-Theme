@@ -291,7 +291,6 @@ h4, h5, h6 {
 		}
 		.main li.entry>.entry-metadata a {
 			color: var(--accent-color);
-			text-decoration: none;
 		}
 		.main li.entry>.entry-metadata a:hover {
 			text-decoration: underline;
