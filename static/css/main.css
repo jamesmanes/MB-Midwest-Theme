@@ -295,6 +295,9 @@ h4, h5, h6 {
 		.main li.entry>.entry-metadata a:hover {
 			text-decoration: underline;
 		}
+		.main li.entry>.entry-metadata + .entry-content p:first-child {
+			padding-top: 0.3rem;
+		}
 	.main li.entry .entry-content {
 		-webkit-backdrop-filter: blur(0.4rem);
 		backdrop-filter: blur(0.4rem);
