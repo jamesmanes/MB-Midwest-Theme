@@ -346,6 +346,7 @@ h4, h5, h6 {
 		color: var(--link-color);
 	}
 	.main li.entry .entry-content img {
+		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
 		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
 		border: 0.6rem solid white;
 		margin: 0.4rem;
