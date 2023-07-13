@@ -42,8 +42,9 @@
 			{{ if .Title }}
 			<h1 class="entry-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 			{{ end }}
-			<div class="entry-content">
-				{{ .Content }}
+			<div class="entry-content-wrapper">
+				<div class="fake-border"></div>
+				<div class="entry-content">{{ .Content }}</div>
 			</div>
 		</li>
 	</ul>

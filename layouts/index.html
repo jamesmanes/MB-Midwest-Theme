@@ -21,9 +21,10 @@
 					</a>
 				</span>
             </div>
-            <div class="entry-content">
-                {{ .Content }}
-            </div>
+            <div class="entry-content-wrapper">
+				<div class="fake-border"></div>
+				<div class="entry-content">{{ .Content }}</div>
+			</div>
         </li>
         {{ end }}
     </ul>

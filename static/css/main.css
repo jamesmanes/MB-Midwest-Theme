@@ -110,6 +110,11 @@ h4, h5, h6 {
 	.credit a {
 		color: var(--link-color);
 	}
+.fake-border {
+	background-color: var(--text-color);
+	border-radius: 1rem;
+	min-width: 0.25rem;
+}
 .mb-logo {
     width: 2rem;
     position: absolute;
@@ -157,9 +162,10 @@ h4, h5, h6 {
     margin-top: 1rem;
 }
 .replies-separator {
+	border-radius: 1rem;
+	border-top: 0.25rem dashed var(--text-color);
 	margin-bottom: 4rem;
 	margin-top: 4rem;
-	border: 0.25rem dashed var(--text-color);
 	opacity: 0.2;
 }
 .rss-logo {
@@ -281,12 +287,12 @@ h4, h5, h6 {
 	}
 	.main li.entry>.entry-metadata {
 		color: var(--accent-color);
-		margin-bottom: -0.1rem;
+		margin-bottom: 0.5rem;
 	}
 		.main li.entry>.entry-metadata>span {
 			display: inline-block;
 			background-color: var(--text-color);
-			border-radius: 0.4rem 0.4rem 0 0;
+			border-radius: 0.4rem;
 			padding: 0.3rem 0.8rem 0.3rem 0.8rem;
 		}
 		.main li.entry>.entry-metadata a {
@@ -295,15 +301,14 @@ h4, h5, h6 {
 		.main li.entry>.entry-metadata a:hover {
 			text-decoration: underline;
 		}
-		.main li.entry>.entry-metadata + .entry-content p:first-child {
-			padding-top: 0.3rem;
-		}
+	.main li.entry .entry-content-wrapper {
+		display: flex;
+		gap: 0.5rem;
+	}
 	.main li.entry .entry-content {
 		-webkit-backdrop-filter: blur(0.4rem);
 		backdrop-filter: blur(0.4rem);
-		border-left: 0.25rem solid var(--text-color);
 		border-radius: 0 0.4rem 0.4rem 0;
-		padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 		text-align: left;
 		word-wrap: break-word;
 	}
@@ -347,6 +352,7 @@ h4, h5, h6 {
 	}
 	.main li.entry .entry-content img {
 		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
+		border-radius: 0.4rem;
 		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
 		border: 0.6rem solid white;
 		margin: 0.4rem;
@@ -363,6 +369,8 @@ h4, h5, h6 {
 	margin: 2rem 4rem auto 4rem;
 }
 	.photogrid img {
+		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
+		border-radius: 0.4rem;
 		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
 		border: 0.6rem solid white;
 		margin: 1rem;

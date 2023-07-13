@@ -27,9 +27,12 @@
 						</a>
 					</span>
 				</div>
-				<div class="entry-content">
-					<span class="p-name"><b>{{ .Title }}</b></span> 
-					<span class="p-summary">{{ .Summary | truncate 100 }}</span>
+				<div class="entry-content-wrapper">
+					<div class="fake-border"></div>
+					<div class="entry-content">
+					  <span class="p-name"><b>{{ .Title }}</b></span> 
+					  <span class="p-summary">{{ .Summary | truncate 100 }}</span>
+				  </div>
 				</div>
 			</li>
 		{{ end }}
