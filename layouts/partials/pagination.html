@@ -8,7 +8,9 @@
 			<a href="{{ $paginator.Prev.URL }}" title="Previous Page">Previous</a>
         </span>
     {{ end }}
-	<span class="spacer">|</span>
+    {{ if and $paginator.HasPrev $paginator.HasNext }}
+        <span class="spacer">|</span>
+    {{ end }}
     {{ if $paginator.HasNext }}
         <span class="navlink">
             <a href="{{ $paginator.Next.URL }}">Next</a>

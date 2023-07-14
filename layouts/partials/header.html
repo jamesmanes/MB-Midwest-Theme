@@ -9,57 +9,50 @@
 		</svg>
     	<a href="/">{{.Site.Title}}</a>
 	</div>
-    <nav class="site-nav" aria-label="navigation" aria-description="Navigation links." tabindex="0">
-        {{ range .Site.Menus.main }}
-        {{ if .Page.Params.redirect }}
-        <a class="page-link" href="{{ .Page.Params.redirect }}">
-            <div class="outer-button">
-                <div class="inner-button">{{ .Name }}</div>
-            </div>
-        </a>
-        {{ else }}
-		{{ $lcName := lower .Name }}
-		<div class="page-link-wrapper">
-  			{{ if in $lcName "about" }}
-			<span tabindex="-1" class="page-link-emoji">
-				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
-					🧭
-				</a>
-			</span>
-			{{ end }}
-  			{{ if in $lcName "archive" }}
-			<span tabindex="-1" class="page-link-emoji">
-				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
-					🗄️
-				</a>
-			</span>
-			{{ end }}
-  			{{ if in $lcName "photos" }}
-			<span tabindex="-1" class="page-link-emoji">
-				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
-					📸
-				</a>
-			</span>
-			{{ end }}
-  			{{ if in $lcName "reading" }}
-			<span tabindex="-1" class="page-link-emoji">
-				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
-					📚
-				</a>
-			</span>
-			{{ end }}
-  			{{ if in $lcName "replies" }}
-			<span tabindex="-1" class="page-link-emoji">
-				<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">
-					💬
-				</a>
-			</span>
-			{{ end }}
-			<a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
-  				{{ .Name }}
-          	</a>
-		</div>
-        {{ end }}
-        {{ end }}
-    </nav>
+	<div class="site-nav-wrapper">
+		<div class="fake-border"></div>
+    	<nav class="site-nav" aria-label="navigation" aria-description="Navigation links." tabindex="0">
+        	{{ range .Site.Menus.main }}
+        	{{ if .Page.Params.redirect }}
+        	<a class="page-link" href="{{ .Page.Params.redirect }}">
+            	<div class="outer-button">
+                	<div class="inner-button">{{ .Name }}</div>
+            	</div>
+        	</a>
+        	{{ else }}
+			{{ $lcName := lower .Name }}
+			<div class="page-link-wrapper">
+  				{{ if in $lcName "about" }}
+				<span tabindex="-1" class="page-link-emoji">
+					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">🧭</a>
+				</span>
+				{{ end }}
+  				{{ if in $lcName "archive" }}
+				<span tabindex="-1" class="page-link-emoji">
+					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">🗄️</a>
+				</span>
+				{{ end }}
+  				{{ if in $lcName "photos" }}
+				<span tabindex="-1" class="page-link-emoji">
+					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">📸</a>
+				</span>
+				{{ end }}
+  				{{ if in $lcName "reading" }}
+				<span tabindex="-1" class="page-link-emoji">
+					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">📚</a>
+				</span>
+				{{ end }}
+  				{{ if in $lcName "replies" }}
+				<span tabindex="-1" class="page-link-emoji">
+					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">💬</a>
+				</span>
+				{{ end }}
+				<a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
+  					{{ .Name }}
+          		</a>
+			</div>
+        	{{ end }}
+        	{{ end }}
+    	</nav>
+	</div>
 </header>
