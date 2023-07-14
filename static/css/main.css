@@ -296,6 +296,10 @@ h4, h5, h6 {
 			background-color: var(--text-color);
 			border-radius: 0.4rem;
 			padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+			transition: transform .2s;
+		}
+		.main li.entry>.entry-metadata>span:hover {
+			transform: scale(1.2) rotate(-2deg);
 		}
 		.main li.entry>.entry-metadata a {
 			color: var(--accent-color);
@@ -362,6 +366,13 @@ h4, h5, h6 {
 		max-width: calc(100% - 2rem); 
 		height: auto;
 		width: auto;
+		transition: transform .2s;
+	}
+	.main li.entry .entry-content p img:hover {
+		transform: rotate(0deg);
+	}
+	.main li.entry .entry-content img:hover {
+		transform: rotate(0deg);
 	}
 .photogrid {
 	display: flex;
@@ -377,12 +388,16 @@ h4, h5, h6 {
 		border: 0.6rem solid white;
 		margin: 1rem;
 		max-width: 16rem;
+		transition: transform .2s;
 	}
 	.photogrid a:nth-child(odd) img {
 		transform: rotate(1deg);
 	}
 	.photogrid a:nth-child(even) img {
 		transform: rotate(-1deg);
+	}
+	.photogrid a img:hover {
+		transform: scale(1.2) rotate(0deg);
 	}
 /* pagination */
 #post-nav {
@@ -591,6 +606,9 @@ footer {
 	}
 	footer>.footer-wrapper>.blog-description>a {
 		color: var(--accent-color);
+	}
+	footer>.footer-wrapper>.footer-links {
+		border-color: var(--text-color)
 	}
 	footer>.footer-wrapper>.footer-links a {
 		color: var(--text-color);
