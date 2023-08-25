@@ -44,6 +44,7 @@ body {
 	--bg-overlay-gradient: linear-gradient(to bottom, rgba(220, 230, 255, 0.7), rgba(200, 200, 255, 0.9));
 	--text-color: #2f2f2f;
 	--link-color: black;
+	--text-shadow: rgba(0,0,0,0.3);
 }
 body.dark-theme {
 	--accent-color: #2f2f2f;
@@ -52,6 +53,7 @@ body.dark-theme {
 	--bg-overlay-gradient: linear-gradient(to bottom, rgba(8, 32, 64, 0.5), rgba(0, 16, 32, 0.6));
 	--text-color: #efefef;
 	--link-color: white;
+	--text-shadow: rgba(255,255,255,0.3);
 }
 body {
 	font-family: "Poppins";
@@ -312,10 +314,9 @@ h4, h5, h6 {
 		gap: 0.5rem;
 	}
 	.main li.entry .entry-content {
-		-webkit-backdrop-filter: blur(0.4rem);
-		backdrop-filter: blur(0.4rem);
 		border-radius: 0 0.4rem 0.4rem 0;
 		text-align: left;
+		text-shadow: var(--text-shadow);
 		word-wrap: break-word;
 	}
 	.main li.entry .reading-entry-content {
@@ -360,7 +361,8 @@ h4, h5, h6 {
 		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
 		border-radius: 0.4rem;
 		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
-		border: 0.6rem solid white;
+		border: 0.6rem solid;
+		border-color: var(--text-color);
 		margin: 0.4rem;
 		/* Make sure big images with borders don't go outside of main */
 		max-width: calc(100% - 2rem); 
