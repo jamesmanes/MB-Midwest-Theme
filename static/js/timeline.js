@@ -11,22 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			  }
 		});
 	};
-	let titleCb = (entries, observer) => {
-		entries.forEach((entry) => {
-			  if (entry.isIntersecting) {
-				entry.target.classList.remove("fly-in");
-			  } else {
-				  entry.target.classList.add("fly-in");
-			  }
-		});
-	};
 	
 	let fadeOpts = {
-		root: null,
-		rootMargin: "-25%",
-		threshold: 0,
-	};
-	let titleOpts = {
 		root: null,
 		rootMargin: "-25%",
 		threshold: 0,
@@ -37,8 +23,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	document.querySelectorAll(".entry").forEach((i) => {
 		if (i) { fadeOb.observe(i) }
-	});
-	document.querySelectorAll(".date-title").forEach((i) => {
-		if (i) { titleOb.observe(i) }
 	});
 });
