@@ -9,22 +9,40 @@
 		{{ range $paginator.Pages }}
         <li class="entry">
             {{ if .Title }}
-            <h1 class="entry-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-            {{ end }}
-            <div class="entry-metadata">
-            	<span>
-					<a href="{{ .Permalink }}" class="u-url">
-						<time class="dt-published"
-                            datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">
-                            {{ .Date.Format "Mon, Jan 2, 2006"}}
-						</time>
-					</a>
-				</span>
+            <h1 class="entry-title">
+                <span class="emoji">🗒️</span>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h1>
+            <div class="simple-date">
+                <span>Entry date: </span>
+                <time class="dt-published"
+                  datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">
+                  {{ .Date.Format "Jan 2, 2006"}}</time>
             </div>
+            {{ end }}
+            {{ if not .Title }}
+              <div class="entry-metadata">
+                <span class="date-title">
+                      <span>🗓️</span>
+                          <a href="{{ .Permalink }}" class="u-url">
+                        <time class="dt-published"
+                  datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">
+                  {{ .Date.Format "Jan 2, 2006"}}
+                        </time>
+                      </a>
+                </span>
+              </div>
+            {{ end }}
             <div class="entry-content-wrapper">
 				<div class="fake-border"></div>
 				<div class="entry-content">{{ .Content }}</div>
 			</div>
+            <div class="timeline">
+                <div class="dot">•</div>
+                <div class="dot">•</div>
+                <div class="dot">•</div>
+                <div class="dot">•</div>
+            </div>
         </li>
         {{ end }}
     </ul>

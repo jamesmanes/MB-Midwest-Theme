@@ -5,11 +5,14 @@
 		</div>
 		{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 		{{ if gt (len $list) 0 }}
-			<ul class="categories">
-    			{{ range $list }}
-				<li>📁 <a href="{{ .Permalink }}">{{.Title}}</a></li>
-				{{ end }}
-			</ul>
+			<div class="categories-wrapper">
+				  <div class="fake-border"></div>
+				  <ul class="categories">
+					  {{ range $list }}
+					  <li>📁 <a href="{{ .Permalink }}">{{.Title}}</a></li>
+					  {{ end }}
+				  </ul>
+			</div>
 		{{ end }}
 		<ul class="entries">
 		{{ $list := (where .Site.Pages "Type" "post") }}
@@ -17,6 +20,7 @@
 			<li class="entry">
 				<div class="entry-metadata">
 					<span>
+						<span>📌</span>
 						<a href="{{ .Permalink }}" class="u-url">
 								<time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"}}
 								</time>
@@ -26,6 +30,12 @@
 				<div class="entry-content">
 					<span class="p-name"><b>{{ .Title }}</b></span> 
 					<span class="p-summary">{{ .Summary | truncate 100 }}</span>
+				</div>
+				<div class="timeline">
+					<div class="dot">•</div>
+					<div class="dot">•</div>
+					<div class="dot">•</div>
+					<div class="dot">•</div>
 				</div>
 			</li>
 		{{ end }}

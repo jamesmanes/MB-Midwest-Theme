@@ -13,6 +13,7 @@
             {{ end }}
             <div class="entry-metadata">
             	<span>
+                    <span>📌</span>
                     <a href="{{ .Permalink }}" class="u-url">
                         <time class="dt-published"
                             datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"
@@ -25,6 +26,12 @@
 				<div class="fake-border"></div>
 				<div class="entry-content">{{ .Content }}</div>
 			</div>
+            <div class="timeline">
+                <div class="dot">•</div>
+                <div class="dot">•</div>
+                <div class="dot">•</div>
+                <div class="dot">•</div>
+            </div>
         </li>
         {{ end }}
     </ul>
