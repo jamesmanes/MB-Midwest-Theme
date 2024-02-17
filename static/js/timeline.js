@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 	
 	let fadeOb = new IntersectionObserver(fadeCb, fadeOpts);
-	let titleOb = new IntersectionObserver(titleCb, titleOpts);
 	
 	document.querySelectorAll(".entry").forEach((i) => {
 		if (i) { fadeOb.observe(i) }
