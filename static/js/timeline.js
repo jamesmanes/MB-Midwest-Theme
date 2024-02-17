@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
 	let fadeCb = (entries, observer) => {
 		entries.forEach((entry) => {
