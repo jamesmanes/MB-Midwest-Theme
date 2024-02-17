@@ -8,6 +8,8 @@
         {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Title }}{{ end }}
         {{ end }}
     </title>
+    
+    <base href="{{ "" | absURL }}">
 
     <meta name="description" content="{{ .Summary }}">
     <meta name="color-scheme" content="dark light">

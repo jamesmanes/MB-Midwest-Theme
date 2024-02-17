@@ -389,7 +389,17 @@ h4, h5, h6 {
 		max-width: calc(100% - 2rem); 
 		height: auto;
 		width: auto;
+		transition: transform .2s;
 	}
+		.main li.entry .entry-content img:hover {
+			cursor: pointer;
+		}
+		.main li.entry .entry-content img:nth-child(odd):hover {
+			transform: scale(1.05) rotate(1deg);
+		}
+		.main li.entry .entry-content img:nth-child(even):hover {
+			transform: scale(1.05) rotate(-1deg);
+		}
 .photogrid {
 	display: flex;
 	flex-wrap: wrap;

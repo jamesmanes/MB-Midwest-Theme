@@ -1,5 +1,5 @@
 {{ define "main" }}
-	<script type="text/javascript" src="../js/timeline.js"></script>
+	<script type="text/javascript" src="js/timeline.js"></script>
 	<div class="main">
 		<div class="page-title">
 			<h1>🗄️ Archive</h1> 
@@ -21,16 +21,19 @@
 			<li class="entry">
 				<div class="entry-metadata">
 					<span>
-						<span>📌</span>
+						<span>📌🗓️</span>
 						<a href="{{ .Permalink }}" class="u-url">
 								<time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006"}}
 								</time>
 						</a>
 					</span>
 				</div>
-				<div class="entry-content">
-					<span class="p-name"><b>{{ .Title }}</b></span> 
-					<span class="p-summary">{{ .Summary | truncate 100 }}</span>
+				<div class="entry-content-wrapper">
+					<div class="fake-border"></div>
+					<div class="entry-content">
+						<span class="p-name"><b>{{ .Title }}</b></span> 
+						<span class="p-summary">{{ .Summary | truncate 100 }}</span>
+					</div>
 				</div>
 				<div class="timeline">
 					<div class="dot">•</div>
