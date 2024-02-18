@@ -1,21 +1,57 @@
 {{ define "main" }}
 <div class="main">
 	<div class="page-title">
-     	<h1>📚 Reading</h1> 
-    </div>
+		<h1>📚 Reading</h1> 
+	</div>
     <ul class="entries">
-        {{ range .Site.Data.bookshelves.currentlyreading }}
-		<li class="entry reading-entry">
-        	<div class="entry-content reading-entry-content">
-				<img class="book-cover" src="{{.cover_url}}"/>
-   				<a href="https://micro.blog/books/{{ .isbn }}">
-					<h1 class="book-title">
-						{{ .title }} 
-					</h1>
-					<div>by {{.author}}</div>
-				</a>
-         	</div>
-		</li>
+		{{ if gt (len .Site.Data.bookshelves.currentlyreading) 0 }}
+			<h3>📖 Currently Reading</h3>
+			{{ range .Site.Data.bookshelves.currentlyreading }}
+			<li class="entry reading-entry">
+				<div class="entry-content reading-entry-content">
+					<img class="book-cover" src="{{.cover_url}}"/>
+					   <a href="https://micro.blog/books/{{ .isbn }}">
+						<h1 class="book-title">
+							{{ .title }} 
+						</h1>
+						<div>by {{.author}}</div>
+					</a>
+				 </div>
+			</li>
+			{{ end }}
+			<div class="post-separator"></div>
+		{{ end }}
+		{{ if gt (len .Site.Data.bookshelves.finishedreading) 0 }}
+			<h3>🥃 Finished Reading</h3>
+			{{ range .Site.Data.bookshelves.finishedreading }}
+			<li class="entry reading-entry">
+				<div class="entry-content reading-entry-content">
+					<img class="book-cover" src="{{.cover_url}}"/>
+					   <a href="https://micro.blog/books/{{ .isbn }}">
+						<h1 class="book-title">
+							{{ .title }} 
+						</h1>
+						<div>by {{.author}}</div>
+					</a>
+				 </div>
+			</li>
+			{{ end }}
+		{{ end }}
+		{{ if gt (len .Site.Data.bookshelves.wanttoread) 0 }}
+			<h3>🔍 Want to Read</h3>
+			{{ range .Site.Data.bookshelves.wanttoread }}
+			<li class="entry reading-entry">
+				<div class="entry-content reading-entry-content">
+					<img class="book-cover" src="{{.cover_url}}"/>
+					   <a href="https://micro.blog/books/{{ .isbn }}">
+						<h1 class="book-title">
+							{{ .title }} 
+						</h1>
+						<div>by {{.author}}</div>
+					</a>
+				 </div>
+			</li>
+			{{ end }}
 		{{ end }}
 	</ul>
 </div>

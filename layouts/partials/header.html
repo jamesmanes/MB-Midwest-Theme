@@ -12,7 +12,7 @@
 	<div class="site-nav-wrapper">
 		<div class="fake-border"></div>
     	<nav class="site-nav" aria-label="navigation" aria-description="Navigation links." tabindex="0">
-        	{{ range .Site.Menus.main }}
+        	{{ range sort .Site.Menus.main ".Name" "asc" }}
         	{{ if .Page.Params.redirect }}
         	<a class="page-link" href="{{ .Page.Params.redirect }}">
             	<div class="outer-button">
@@ -37,14 +37,14 @@
 					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">📸</a>
 				</span>
 				{{ end }}
-  				{{ if in $lcName "reading" }}
-				<span tabindex="-1" class="page-link-emoji">
-					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">📚</a>
-				</span>
-				{{ end }}
   				{{ if in $lcName "replies" }}
 				<span tabindex="-1" class="page-link-emoji">
 					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">💬</a>
+				</span>
+				{{ end }}
+			    {{ if in $lcName "reading" }}
+				<span tabindex="-1" class="page-link-emoji">
+					<a class="page-emoji-link" href="{{ .URL | relLangURL | safeURL }}">📚</a>
 				</span>
 				{{ end }}
 				<a class="page-link" href="{{ .URL | relLangURL | safeURL }}">
