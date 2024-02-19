@@ -464,7 +464,7 @@ footer {
 	align-self: center;
 	flex-shrink: 0;
 	position: relative;
-	padding: 4rem 0 4rem 0;
+	padding: 3rem 0 4rem 0;
 	width: 100%;
 }
 	footer>.footer-wrapper {
@@ -547,9 +547,6 @@ footer {
 	#post-nav {
 		width: calc(100% - 2rem);
 	}
-	footer {
-		width: calc(100% - 2rem);
-	}
 	footer>.footer-wrapper {
 		flex-direction: column;
 		row-gap: 1rem;
@@ -566,12 +563,18 @@ footer {
 	.main li.entry .reading-entry-content {
 		padding: 1rem;
 	}
+	.credit {
+		justify-content: center;
+	}
+	footer {
+		padding-top: 2rem;
+	}
+	footer>.footer-wrapper {
+		align-items: center;
+	}
 	footer>.footer-wrapper>.footer-links {
 		align-items: flex-start;
-		flex-direction: column;
-	}
-	footer>.footer-wrapper>.footer-links>.footer-spacer {
-		display: none;
+		flex-direction: row;
 	}
 }
 
