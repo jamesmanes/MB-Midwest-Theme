@@ -2,14 +2,11 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-	<div id="bg">
-		<div id="bg-overlay">
-    		{{ partial "header.html" . }}
-    		{{ block "main" . }}{{ end }}
-   			{{ partial "footer.html" . }}
-    		{{ partial "custom_footer.html" . }}
-			{{ partial "credit.html" . }}
-		</div>
-	</div>
+	{{ partial "header.html" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "pagination.html" .}}
+	{{ partial "footer.html" . }}
+	{{ partial "custom_footer.html" . }}
+	{{ partial "credit.html" . }}
 </body>
 </html>
