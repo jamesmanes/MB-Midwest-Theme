@@ -45,6 +45,13 @@ body {
 	--text-color: #2f2f2f;
 	--link-color: black;
 	--text-shadow: rgba(0,0,0,0.3);
+	
+	font-family: "Poppins";
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	margin: 0;
 	background-color: var(--bg-accent-dark);
 	background: var(--bg-image);
 }
@@ -56,17 +63,6 @@ body.dark-theme {
 	--text-color: #efefef;
 	--link-color: white;
 	--text-shadow: rgba(255,255,255,0.3);
-	background-color: var(--bg-accent-dark);
-	background: var(--bg-image);
-}
-body {
-	font-family: "Poppins";
-	background-color: white;
-	color: var(--text-color);
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	margin: 0;
 }
 h1 {
 	font-size: 1.6rem;
@@ -606,9 +602,6 @@ footer {
 		--bg-accent-dark: #1C2939;
 		--link-color: white;
 		--text-color: #efefef;
-		color: var(--text-color);
-		background-color: var(--bg-accent-dark);
-		background: var(--bg-image);
 	}
 	body.light-theme {
 		--accent-color: #efefef;
@@ -617,8 +610,6 @@ footer {
 		--bg-accent-dark: #C6C3D6;
 		--text-color: #2f2f2f;
 		--link-color: black;
-		background-color: var(--bg-accent-dark);
-		background: var(--bg-image);
 	}
 	#bg {
 		background: var(--bg-image);
