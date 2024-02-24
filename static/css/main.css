@@ -35,9 +35,6 @@
 }
 html {
 	--content-width: 40rem;
-	height: 100%;
-}
-body {
 	--accent-color: #efefef;
 	--bg-image: url('../img/cloud-bg-2.jpg');
 	--bg-accent-light: #E2E4F1;
@@ -45,15 +42,17 @@ body {
 	--text-color: #2f2f2f;
 	--link-color: black;
 	--text-shadow: rgba(0,0,0,0.3);
-	
+	background-color: var(--bg-accent-dark);
+	background: var(--bg-image);
+	height: 100%;
+}
+body {
 	font-family: "Poppins";
 	color: var(--text-color);
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 	margin: 0;
-	background-color: var(--bg-accent-dark);
-	background: var(--bg-image);
 }
 body.dark-theme {
 	--accent-color: #2f2f2f;
@@ -279,7 +278,7 @@ h4, h5, h6 {
 		display: flex;
 		flex-direction: column;
 		padding-inline-start: 0;
-		margin-bottom: 0;
+		margin-bottom: 3rem;
 		margin-top: 2rem;
 	}
 	.main li.entry {
@@ -425,7 +424,7 @@ h4, h5, h6 {
 	flex-wrap: wrap;
 	flex-grow: 1;
 	justify-content: space-evenly;
-	margin: 2rem 4rem auto 4rem;
+	margin: 2rem 4rem 3rem 4rem;
 }
 	.photogrid img {
 		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
@@ -451,7 +450,6 @@ h4, h5, h6 {
 	align-self: center;
 	gap: 1rem;
 	justify-content: flex-start;
-	margin-top: 2rem;
 	margin-bottom: 4rem;
 	width: var(--content-width);
 }
@@ -595,7 +593,7 @@ footer {
 
 /* dark mode. */
 @media (prefers-color-scheme: dark) {
-	body {
+	html {
 		--accent-color: #2f2f2f;
 		--bg-image: url('../img/cloud-bg-1.jpg');
 		--bg-accent-light: #30384A;
@@ -603,7 +601,7 @@ footer {
 		--link-color: white;
 		--text-color: #efefef;
 	}
-	body.light-theme {
+	html.light-theme {
 		--accent-color: #efefef;
 		--bg-image: url('../img/cloud-bg-2.jpg');
 		--bg-accent-light: #E2E4F1;
