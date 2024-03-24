@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <title>
         {{ block "title" . }}
@@ -16,7 +16,32 @@
     <meta name="theme-color" content="#e7edfd" media="(prefers-color-scheme: light)">
 	<meta name="theme-color" content="#232d3c" media="(prefers-color-scheme: dark)">
 
-    <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
+    <!-- generics -->
+    <link rel="icon" href="img/favicon-32-light.png" sizes="32x32"
+        media="(prefers-color-scheme: light)"/>
+    <link rel="icon" href="img/favicon-128-light.png" sizes="128x128"
+        media="(prefers-color-scheme: light)"/>
+    <link rel="icon" href="img/favicon-192-light.png" sizes="192x192"
+        media="(prefers-color-scheme: light)"/>
+    <link rel="icon" href="img/favicon-32-dark.png" sizes="32x32"
+        media="(prefers-color-scheme: dark)"/>
+    <link rel="icon" href="img/favicon-128-dark.png" sizes="128x128"
+        media="(prefers-color-scheme: dark)"/>
+    <link rel="icon" href="img/favicon-192-dark.png" sizes="192x192"
+        media="(prefers-color-scheme: dark)"/>
+    
+    <!-- Android -->
+    <link rel="shortcut icon" href="img/favicon-192-light.png" sizes="196x196"
+        media="(prefers-color-scheme: light)"/>
+    <link rel="shortcut icon" href="img/favicon-192-dark.png" sizes="196x196"
+        media="(prefers-color-scheme: dark)"/>
+    
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="img/favicon-180-light.png"
+        media="(prefers-color-scheme: light)/">
+    <link rel="apple-touch-icon" href="img/favicon-180-dark.png"
+        media="(prefers-color-scheme: dark)/">
+    
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
     <link rel="stylesheet" href="{{ "custom.css" | relURL }}">
     <link rel="canonical" href="{{ .Permalink }}">

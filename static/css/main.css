@@ -399,9 +399,9 @@ h4, h5, h6 {
 	}
 	.main li.entry .entry-content img {
 		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
-		border-radius: 0.4rem;
-		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
-		border: 0.6rem solid;
+		border-radius: 0.2rem;
+		box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+		border: 0.25rem solid;
 		border-color: var(--text-color);
 		margin: 0.4rem;
 		/* Make sure big images with borders don't go outside of main */
@@ -428,9 +428,9 @@ h4, h5, h6 {
 }
 	.photogrid img {
 		background: repeating-conic-gradient(gray 0% 25%, transparent 0% 50%) 50% / 20px 20px;
-		border-radius: 0.4rem;
-		box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
-		border: 0.6rem solid var(--text-color);
+		border-radius: 0.2rem;
+		box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
+		border: 0.25rem solid var(--text-color);
 		margin: 1rem;
 		max-width: 16rem;
 		transition: transform .2s;
