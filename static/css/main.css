@@ -53,6 +53,7 @@ body {
 	flex-direction: column;
 	min-height: 100%;
 	margin: 0;
+	position: relative;
 }
 body.dark-theme {
 	--accent-color: #2f2f2f;
