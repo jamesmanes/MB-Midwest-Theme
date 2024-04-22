@@ -36,7 +36,7 @@
 html {
 	--content-width: 40rem;
 	--accent-color: #efefef;
-	--bg-image: url('../img/cloud-bg-2.jpg');
+	--bg-image: url('../img/cloud-bg-2.webp');
 	--bg-accent-light: #E2E4F1;
 	--bg-accent-dark: #C6C3D6;
 	--text-color: #2f2f2f;
@@ -56,7 +56,7 @@ body {
 }
 body.dark-theme {
 	--accent-color: #2f2f2f;
-	--bg-image: url('../img/cloud-bg-1.jpg');
+	--bg-image: url('../img/cloud-bg-1.webp');
 	--bg-accent-light: #30384A;
 	--bg-accent-dark: #1C2939;
 	--text-color: #efefef;
@@ -356,6 +356,9 @@ h4, h5, h6 {
 		.main li.entry>.entry-metadata a:hover {
 			text-decoration: underline;
 		}
+	.main li.entry>.entry-metadata:has(+ .entry-title) {
+        margin-bottom: 0;
+    }
 	.main li.entry .entry-content-wrapper {
 		display: flex;
 		gap: 0.5rem;
@@ -595,7 +598,7 @@ footer {
 @media (prefers-color-scheme: dark) {
 	html {
 		--accent-color: #2f2f2f;
-		--bg-image: url('../img/cloud-bg-1.jpg');
+		--bg-image: url('../img/cloud-bg-1.webp');
 		--bg-accent-light: #30384A;
 		--bg-accent-dark: #1C2939;
 		--link-color: white;
@@ -603,7 +606,7 @@ footer {
 	}
 	html.light-theme {
 		--accent-color: #efefef;
-		--bg-image: url('../img/cloud-bg-2.jpg');
+		--bg-image: url('../img/cloud-bg-2.webp');
 		--bg-accent-light: #E2E4F1;
 		--bg-accent-dark: #C6C3D6;
 		--text-color: #2f2f2f;
