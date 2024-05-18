@@ -376,18 +376,21 @@ h4, h5, h6 {
 		padding: 0;
 	}
 		.main li.entry .entry-content blockquote p {
-			background-color: var(--bg-quote-color);
+			background: linear-gradient(90deg, var(--bg-quote-color), transparent);
 			border-radius: 0.2rem;
 			border-left: 0.25rem solid var(--text-color);
 			padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+			font-family: serif;
 			font-size: 1.2rem;
 			font-style: italic;
 		}
 		.main li.entry .entry-content blockquote p::before {
 			content: '"';
+			font-family: serif;
 		}
 		.main li.entry .entry-content blockquote p::after {
 			content: '"';
+			font-family: serif;
 		}
 	.main li.entry.reading-entry {
 		margin-top: 1rem;
