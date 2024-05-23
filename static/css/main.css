@@ -174,6 +174,29 @@ h4, h5, h6 {
 	gap: 2rem;
 	margin-top: 2rem;
 }
+	.microblog_conversation a {
+		color: var(--link-color);
+	}
+	.microblog_conversation .microblog_reply_form {
+		margin-bottom: 3rem;
+	}
+	.microblog_conversation .microblog_reply_signin {
+		font-style: italic;
+	}
+	.microblog_conversation .microblog_reply_textarea>textarea {
+		background-color: var(--bg-quote-color);
+		border: 0.1rem solid var(--bg-quote-color);
+		border-radius: 0.2rem;
+		height: 6rem;
+	}
+	.microblog_conversation .microblog_reply_button>input {
+		height: 2rem;
+		width: 4rem;
+		background-color: var(--bg-quote-color);
+		border: 0.1rem solid var(--bg-quote-color);
+		border-radius: 0.2rem;
+		font-size: 0.8rem;
+	}
 	.microblog_conversation>.microblog_post {
 		border-left: 0.25rem solid var(--text-color);
 		padding-left: 0.5rem;
