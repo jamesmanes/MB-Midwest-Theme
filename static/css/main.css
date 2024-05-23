@@ -110,6 +110,12 @@ h4, h5, h6 {
 	font-size: 1rem;
 	font-weight: normal;
 }
+hr {
+	background-color: var(--text-color);
+	border: 0.05rem solid var(--text-color);
+	border-radius: 1rem;
+	color: var(--text-color);
+}
 /* ids */
 #bg {
 	background: var(--bg-image);
