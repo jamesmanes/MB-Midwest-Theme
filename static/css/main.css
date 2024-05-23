@@ -1,38 +1,50 @@
-/* fonts */
 @font-face {
-	font-family: 'Arvo';
-	font-weight: normal;
-	src: url('../fonts/Arvo/Arvo-Regular.ttf') format('truetype');
+	font-family: "Bitter";
+	font-weight: bold;
+	src: url('../fonts/Bitter/Bitter-Bold.ttf');
 }
 @font-face {
-	font-family: 'Arvo';
-	font-style: bold;
-	src: url('../fonts/Arvo/Arvo-Bold.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'Arvo';
+	font-family: "Bitter";
 	font-style: italic;
-	src: url('../fonts/Arvo/Arvo-Italic.ttf') format('truetype');
+	font-weight: bold;
+	src: url('../fonts/Bitter/Bitter-BoldItalic.ttf');
+}
+@font-face {
+	font-family: "Bitter";
+	font-style: italic;
+	src: url('../fonts/Bitter/Bitter-Italic.ttf');
+}
+@font-face {
+	font-family: "Bitter";
+	font-weight: normal;
+	src: url('../fonts/Bitter/Bitter-Regular.ttf');
+}
+@font-face {
+	  font-family: "Poppins";
+	font-weight: bold;
+	  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+	font-family: "Poppins";
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/Poppins/Poppins-BoldItalic.ttf');
+}
+@font-face {
+	  font-family: "Poppins";
+	font-style: italic;
+	  src: url('../fonts/Poppins/Poppins-Italic.ttf');
 }
 @font-face {
   	font-family: "Poppins";
 	font-weight: normal;
   	src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
-@font-face {
-  	font-family: "Poppins";
-	font-weight: bold;
-  	src: url('../fonts/Poppins/Poppins-Bold.ttf');
-}
-@font-face {
-  	font-family: "Poppins";
-	font-style: italic;
-  	src: url('../fonts/Poppins/Poppins-Italic.ttf');
-}
-/* global */
+
 :root {
   color-scheme: light dark; /* both supported */
 }
+
 html {
 	--content-width: 40rem;
 	--accent-color: #efefef;
@@ -204,7 +216,7 @@ h4, h5, h6 {
 }
 	.site-header>.site-title {
   		display: flex;
-		font-family: Arvo;
+		font-weight: bold;
 		color: var(--text-color);
 		font-size: 2rem;
 		transition: transform .2s;
@@ -335,7 +347,6 @@ h4, h5, h6 {
         display: block;
 		border-radius: 0.4rem;
 		color: var(--text-color);
-		font-family: Arvo;
 		font-weight: bold;
 		padding: 0.4rem 0.8rem 0.4rem 0rem;
 		text-decoration: none;
@@ -380,7 +391,7 @@ h4, h5, h6 {
 			border-radius: 0.2rem;
 			border-left: 0.25rem solid var(--text-color);
 			padding: 0.4rem 0.6rem 0.4rem 0.6rem;
-			font-family: serif;
+			font-family: "Bitter";
 			font-size: 1.2rem;
 			font-style: italic;
 		}
