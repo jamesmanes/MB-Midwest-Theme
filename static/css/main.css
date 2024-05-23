@@ -393,28 +393,27 @@ h4, h5, h6 {
 		word-wrap: break-word;
 	}
 	.main li.entry .entry-content blockquote {
-		margin: 1rem 1rem 1rem 0.5rem;
-		padding: 0;
+		margin: 2rem 1rem 2rem 2.3rem;
+		padding-top: 0;
 	}
 		.main li.entry .entry-content blockquote::before {
+			color: var(--text-color);
 			content: '"';
 			font-family: "Catamaran";
-			font-size: 8rem;
-			margin-bottom: -5rem;
-			padding-bottom: -5rem;
+			font-size: 9rem;
 			line-height: 0;
-			margin-left: -2rem;
+			margin: 2.8rem 0 0 -2.3rem;
 			float: left;
-			margin-top: 2rem;
-			opacity: 0.5;
-		
+			opacity: .3;
+	
 		}
 		.main li.entry .entry-content blockquote p {
 			background: linear-gradient(90deg, var(--bg-quote-color), transparent);
 			border-radius: 0.2rem;
-			padding: 0.4rem 0.6rem 0.4rem 0.6rem;
 			font-family: "Poppins";
 			font-style: italic;
+			padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+			text-align: justify;
 		}
 	.main li.entry.reading-entry {
 		margin-top: 1rem;
