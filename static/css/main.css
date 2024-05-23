@@ -20,14 +20,14 @@
 	src: url('../fonts/Bitter/Bitter-Regular.ttf');
 }
 @font-face {
-	font-family: "BIZUDPMincho";
+	font-family: "Catamaran";
 	font-weight: bold;
-	src: url('../fonts/BIZUDPMincho/BIZUDPMincho-Bold.ttf');
+	src: url('../fonts/Catamaran/Catamaran-Bold.ttf');
 }
 @font-face {
-	font-family: "BIZUDPMincho";
+	font-family: "Catamaran";
 	font-weight: normal;
-	src: url('../fonts/BIZUDPMincho/BIZUDPMincho-Regular.ttf');
+	src: url('../fonts/Catamaran/Catamaran-Regular.ttf');
 }
 @font-face {
 	font-family: "Poppins";
@@ -398,7 +398,7 @@ h4, h5, h6 {
 	}
 		.main li.entry .entry-content blockquote::before {
 			content: '"';
-			font-family: "BIZUDBMincho";
+			font-family: "Catamaran";
 			font-size: 8rem;
 			margin-bottom: -5rem;
 			padding-bottom: -5rem;
