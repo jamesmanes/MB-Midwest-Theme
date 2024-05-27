@@ -375,6 +375,7 @@ hr {
 		font-style: italic;
 	}
 	.main li.entry>h1.entry-title {
+		font-weight: bold;
         display: flex;
 	}
 	.main li.entry>h1.entry-title>span.emoji {
@@ -412,9 +413,12 @@ hr {
     }
 	.main li.entry .entry-content-wrapper {
 		display: flex;
-		gap: 0.5rem;
 	}
 	.main li.entry .entry-content {
+		backdrop-filter: blur(0.4rem);
+		-webkit-backdrop-filter: blur(0.4rem);
+		border-radius: 0.4rem;
+		padding: 0 0.4rem 0.4rem 0;
 		text-align: left;
 		text-shadow: var(--text-shadow);
 		word-wrap: break-word;
