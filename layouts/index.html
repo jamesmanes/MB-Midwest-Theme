@@ -11,10 +11,13 @@
 		{{ range $paginator.Pages }}
         <li class="entry">
             {{ if .Title }}
+            <h1 class="entry-title">
+                <span>🗒️</span>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h1>
             <div class="entry-metadata">
-            <span class="date-title">
-                <span>🗓️</span>
-                <a href="{{ .Permalink }}" class="u-url">
+              <span class="date-title">
+                <a href="{{ .Permalink }}">
                   <time class="dt-published"
                     datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">
                     {{ .Date.Format "Jan 2, 2006"}}
@@ -22,7 +25,6 @@
                 </a>
               </span>
             </div>
-            <h1 class="entry-title">{{ .Title }}</h1>
             {{ end }}
             {{ if not .Title }}
               <div class="entry-metadata">

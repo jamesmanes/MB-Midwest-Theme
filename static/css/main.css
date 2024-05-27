@@ -89,7 +89,7 @@ body.dark-theme {
 	--text-shadow: rgba(255,255,255,0.3);
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+	font-family: Bitter;
 	padding: 0;
 	margin: 0;
 }
@@ -377,6 +377,7 @@ hr {
 	.main li.entry>h1.entry-title {
 		font-weight: bold;
         display: flex;
+        gap: 0.4rem;
 	}
 	.main li.entry>h1.entry-title>span.emoji {
 		margin-top: 0.25rem;
@@ -388,7 +389,9 @@ hr {
 		color: var(--text-color);
 		font-weight: bold;
 		padding: 0.4rem 0.8rem 0.4rem 0rem;
-		text-decoration: none;
+	}
+	.main li.entry>h1.entry-title>span {
+        align-self: center;
 	}
 	.main li.entry>.entry-metadata {
 		font-weight: bold;
@@ -418,7 +421,7 @@ hr {
 		backdrop-filter: blur(0.4rem);
 		-webkit-backdrop-filter: blur(0.4rem);
 		border-radius: 0.4rem;
-		padding: 0 0.4rem 0 0.4rem;
+		padding: 0 0.6rem 0 0.6rem;
 		text-align: left;
 		text-shadow: var(--text-shadow);
 		word-wrap: break-word;
@@ -622,6 +625,7 @@ footer {
 		width: calc(100% - 2rem);
 	}
 	.site-header>.site-title {
+		font-family: Bitter;
 		margin-left: 0.6rem;
 	}
 	.site-header .site-nav-wrapper>.fake-border {

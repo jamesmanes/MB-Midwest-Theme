@@ -16,7 +16,9 @@
 	<ul class="entries">
 		<li class="entry">
 			{{ if .Title }}
-			<h1 class="entry-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <h1 class="entry-title entry-title-single">
+                <span>🗒️ {{ .Title }}</span>
+            </h1>
 			{{ end }}
 			<div class="entry-content-wrapper">
 				<div class="fake-border"></div>
