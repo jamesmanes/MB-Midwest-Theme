@@ -88,27 +88,22 @@ body.dark-theme {
 	--link-color: white;
 	--text-shadow: rgba(255,255,255,0.3);
 }
-h1 {
-	font-size: 1.6rem;
+h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	padding: 0;
 	margin: 0;
+}
+h1 {
+	font-size: 1.8rem;
 }
 h2 {
-	font-size: 1.4rem;
-	font-weight: normal;
-	padding: 0;
-	margin: 0;
+	font-size: 1.6rem;
 }
 h3 {
-	font-size: 1.2rem;
-	font-weight: normal;
-	padding: 0;
-	margin: 0;
+	font-size: 1.4rem;
 }
 h4, h5, h6 {
-	font-size: 1rem;
-	font-weight: normal;
+	font-size: 1.2rem;
 }
 hr {
 	background-color: var(--text-color);
@@ -261,7 +256,7 @@ hr {
   		display: flex;
 		font-weight: bold;
 		color: var(--text-color);
-		font-size: 2rem;
+		font-size: 2.2rem;
 		transition: transform .2s;
 	}
 	.site-header>.site-title:hover {
@@ -395,7 +390,6 @@ hr {
 		text-decoration: none;
 	}
 	.main li.entry>.entry-metadata {
-		font-size: 1.2rem;
 		font-weight: bold;
 		margin-bottom: 0.5rem;
 	}

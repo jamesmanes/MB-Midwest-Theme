@@ -2,7 +2,7 @@
 <script type="text/javascript" src="js/timeline.js"></script>
 <div class="main">
 	<div class="page-title">
-		<h1>💬 Replies</h1>
+		<h2>💬 Replies</h2>
 	</div>
     <ul class="entries">
         {{ if .Site.Params.paginate_replies }}
@@ -11,7 +11,7 @@
         {{ range $list }}
         <li class="entry">
             {{ if .Title }}
-            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{ end }}
 			<div class="entry-metadata">
 				<span>
@@ -35,7 +35,7 @@
         {{ range $list }}
         <li class="entry">
             {{ if .Title }}
-            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{ end }}
 			<div class="entry-metadata">
 				<span>

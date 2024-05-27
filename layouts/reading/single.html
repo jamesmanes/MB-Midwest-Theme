@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="main">
 	<div class="page-title">
-		<h1>📚 Reading</h1> 
+		<h2>📚 Reading</h2> 
 	</div>
     <ul class="entries">
 		{{ if gt (len .Site.Data.bookshelves.currentlyreading) 0 }}
@@ -11,9 +11,9 @@
 				<div class="entry-content reading-entry-content">
 					<img class="book-cover" src="{{.cover_url}}"/>
 					   <a href="https://micro.blog/books/{{ .isbn }}">
-						<h1 class="book-title">
+						<h2 class="book-title">
 							{{ .title }} 
-						</h1>
+						</h2>
 						<div>by {{.author}}</div>
 					</a>
 				 </div>
@@ -28,9 +28,9 @@
 				<div class="entry-content reading-entry-content">
 					<img class="book-cover" src="{{.cover_url}}"/>
 					   <a href="https://micro.blog/books/{{ .isbn }}">
-						<h1 class="book-title">
+						<h2 class="book-title">
 							{{ .title }} 
-						</h1>
+						</h2>
 						<div>by {{.author}}</div>
 					</a>
 				 </div>
@@ -44,9 +44,9 @@
 				<div class="entry-content reading-entry-content">
 					<img class="book-cover" src="{{.cover_url}}"/>
 					   <a href="https://micro.blog/books/{{ .isbn }}">
-						<h1 class="book-title">
+						<h2 class="book-title">
 							{{ .title }} 
-						</h1>
+						</h2>
 						<div>by {{.author}}</div>
 					</a>
 				 </div>

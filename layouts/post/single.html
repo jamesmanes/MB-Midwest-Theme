@@ -3,12 +3,12 @@
 <script type="text/javascript" src="js/copy.js"></script>
 <div class="main">
 	<div class="page-title">
-		<h1>
+		<h2>
 			<span>🗓️ </span>
 			<time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">
 				{{ .Date.Format "Jan 2, 2006"}}
 			</time>
-		</h1>
+		</h2>
 		<div class="permalink">
 			<span>🔗 </span><span id="permalink">permalink</span>
 		</div>
@@ -28,7 +28,7 @@
 	<div class="replies-header" style="display: none;">
 		<div class="post-separator"></div>
 		<div class="page-title">
-			<h1>💬 Replies</h1>
+			<h2>💬 Replies</h2>
 		</div>
 	</div>
 	<script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>

@@ -2,7 +2,7 @@
 	<script type="text/javascript" src="js/timeline.js"></script>
 	<div class="main">
 		<div class="page-title">
-			<h1>🗄️ Archive</h1> 
+			<h2>🗄️ Archive</h2> 
 		</div>
 		{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 		{{ if gt (len $list) 0 }}
