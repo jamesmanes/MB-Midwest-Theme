@@ -448,6 +448,22 @@ hr {
 			padding: 0.2rem 0.6rem 0.2rem 0.6rem;
 			text-align: justify;
 		}
+	.main li.entry .entry-content table {
+        background-color: var(--bg-quote-color);
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        border-collapse: collapse;
+    }
+    .main li.entry .entry-content table td {
+        border: 0.1rem solid var(--bg-quote-color);
+        padding: 0.4rem 4rem 0.4rem 0.6rem;
+    }
+    .main li.entry .entry-content table th {
+        border: 0.1rem solid var(--bg-quote-color);
+        padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    }
+    .main li.entry .entry-content table thead {
+        background-color: var(--bg-quote-color);
+    }
 	.main li.entry.reading-entry {
 		margin-top: 1rem;
 	}
