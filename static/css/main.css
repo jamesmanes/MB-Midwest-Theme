@@ -451,7 +451,6 @@ hr {
 			margin: 2.8rem 0 0 -2.3rem;
 			float: left;
 			opacity: .3;
-	
 		}
 		.main li.entry .entry-content blockquote p {
 			background: linear-gradient(90deg, var(--bg-quote-color), transparent);
@@ -459,7 +458,6 @@ hr {
 			font-family: "Poppins";
 			font-style: italic;
 			padding: 0.2rem 0.6rem 0.2rem 0.6rem;
-			text-align: justify;
 		}
 	.main li.entry .entry-content table {
         background-color: var(--bg-quote-color);
@@ -495,7 +493,7 @@ hr {
 		font-size: 1.2rem;
 	}
 	.main li.entry .entry-content .book-author {
-		
+
 	}
 	.main li.entry .entry-content>blockquote>p:first-child {
 		margin-top: 0;
@@ -520,7 +518,7 @@ hr {
 		border-color: var(--text-color);
 		margin: 0.4rem;
 		/* Make sure big images with borders don't go outside of main */
-		max-width: calc(100% - 2rem); 
+		max-width: calc(100% - 2rem);
 		height: auto;
 		width: auto;
 		transition: transform .2s;
