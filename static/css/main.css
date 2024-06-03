@@ -414,6 +414,10 @@ hr {
     .main li.entry>.entry-metadata>span:hover {
       transform: scale(1.2) rotate(-2deg);
     }
+		.main li.entry>.entry-metadata>span>span {
+			margin-right: 0.2rem;
+			margin-left: -0.07rem;
+		}
     .main li.entry>.entry-metadata a {
       color: var(--text-color);
     }
