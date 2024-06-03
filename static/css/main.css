@@ -257,6 +257,7 @@ hr {
 }
   .site-header>.site-title {
     display: flex;
+		font-family: Bitter;
     font-weight: bold;
     color: var(--text-color);
     font-size: 2.2rem;
@@ -401,6 +402,7 @@ hr {
     text-shadow: 0 0.1rem 0.1rem var(--text-shadow);
   }
   .main li.entry>.entry-metadata {
+		font-family: Bitter;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
@@ -635,7 +637,6 @@ footer {
     width: calc(100% - 2rem);
   }
   .site-header>.site-title {
-    font-family: Bitter;
     margin-left: 0.6rem;
   }
   .site-header .site-nav-wrapper>.fake-border {
