@@ -62,7 +62,7 @@ html {
   --bg-accent-light: #E2E4F1;
   --bg-accent-dark: #C6C3D6;
   --bg-quote-color: rgba(0,0,0,0.1);
-  --fade-color: rgba(198, 195, 214, 0.7);
+  --fade-color: rgba(255,255,255, 0.7);
   --text-color: #2f2f2f;
   --link-color: black;
   --text-shadow: rgba(0,0,0,0.3);
@@ -335,7 +335,6 @@ hr {
     display: flex;
     flex-direction: column;
     padding-inline-start: 0;
-    margin-bottom: 3rem;
     margin-top: 2rem;
   }
   .main li.entry {
@@ -415,6 +414,7 @@ hr {
       transform: scale(1.2) rotate(-2deg);
     }
 		.main li.entry>.entry-metadata>span>span {
+      text-shadow: 0 0.1rem 0.1rem var(--bg-quote-color);
 			margin-right: 0.2rem;
 			margin-left: -0.07rem;
 		}
@@ -729,7 +729,7 @@ footer {
     --bg-accent-light: #E2E4F1;
     --bg-accent-dark: #C6C3D6;
     --bg-quote-color: rgba(0,0,0,0.1);
-    --fade-color: rgba(198, 195, 214, 0.7);
+    --fade-color: rgba(255,255,255, 0.7);
     --link-color: black;
     --text-color: #2f2f2f;
     --text-shadow: rgba(0,0,0,0.3);
