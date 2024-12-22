@@ -4,9 +4,11 @@
 <body>
 	{{ partial "header.html" . }}
 	{{ block "main" . }}{{ end }}
-	{{ partial "pagination.html" .}}
 	{{ partial "footer.html" . }}
 	{{ partial "custom_footer.html" . }}
 	{{ partial "credit.html" . }}
+	{{ range .Site.Params.plugins_js }}
+		<script src="{{ . }}"></script>
+	{{ end }}
 </body>
 </html>

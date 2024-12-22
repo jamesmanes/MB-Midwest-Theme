@@ -9,7 +9,7 @@
 		<itunes:category text="{{ .Site.Params.itunes_subcategory | htmlEscape }}"></itunes:category>
 	</itunes:category>
 	<itunes:author>{{ .Site.Params.itunes_author | htmlEscape }}</itunes:author>
-	<itunes:explicit>no</itunes:explicit>		
+	<itunes:explicit>no</itunes:explicit>
 	<itunes:owner>
 		<itunes:name>{{ .Site.Params.itunes_author | htmlEscape }}</itunes:name>
 		<itunes:email>{{ .Site.Params.itunes_email | htmlEscape }}</itunes:email>
@@ -24,7 +24,7 @@
       <title>{{ .Title | html }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      {{ with .Site.Params.Author.email }}<author>{{.}}{{ with $.Site.Params.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid isPermaLink="true">{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>
       <itunes:subtitle>{{ .Content | html }}</itunes:subtitle>
