@@ -60,7 +60,7 @@
 	},
 	"taxonomies": {
 		"category": "categories"
-	},	
+	},
 	"rssLimit": 25,
 	"uglyURLs": false,
 	"blackfriday": {
@@ -75,7 +75,7 @@
 	},
 	"enableRobotsTXT": true,
 	"languageCode": "[LANGUAGE]",
-	"paginate": 25,
+	"pagination.pagerSize": 25,
 	"params": {
 		"description": "<a href=\"https://j.manes.xyz\">j.manes.xyz</a>",
 		"itunes_description": "[ITUNES_DESCRIPTION]",
