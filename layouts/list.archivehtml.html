@@ -2,9 +2,9 @@
 	<script type="text/javascript" src="js/timeline.js"></script>
 	<div class="main">
 		<div class="page-title">
-			<h2>🗄️ Archive</h2> 
+			<h2>🗄️ Archive</h2>
 		</div>
-		{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+		{{ $list := ($.Site.GetPage "taxonomy" "categories").Pages }}
 		{{ if gt (len $list) 0 }}
 			<div class="categories-wrapper">
 				  <div class="fake-border"></div>
@@ -31,7 +31,7 @@
 				<div class="entry-content-wrapper">
 					<div class="fake-border"></div>
 					<div class="entry-content">
-						<span class="p-name"><b>{{ .Title }}</b></span> 
+						<span class="p-name"><b>{{ .Title }}</b></span>
 						<span class="p-summary">{{ .Summary | truncate 100 }}</span>
 					</div>
 				</div>
